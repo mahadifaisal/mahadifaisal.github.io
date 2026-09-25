@@ -574,3 +574,112 @@ footer p {
     }
 
 }
+
+/* Better Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .project-links a {
+        display: inline-block;
+    }
+
+    .project-tech {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
+
+/* Small Mobile Devices */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .project {
+        padding: 20px;
+    }
+
+    .project h3 {
+        font-size: 20px;
+    }
+
+    .project p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .project-links {
+        gap: 12px;
+    }
+}
+
+/* Mobile Hamburger Menu */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Mobile Navigation */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav-container ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    .nav-container ul.active {
+        display: flex;
+    }
+
+    .nav-container ul li {
+        margin: 8px 0;
+    }
+}
